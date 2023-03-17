@@ -22,6 +22,7 @@ body{
   background: var(--bg-color); 
 }
 .calculator{
+  width: 390px;
   background: var(--secondary);
   padding: 1rem;
   display: flex;
@@ -33,13 +34,24 @@ body{
 }
 .display{
   background: var(--white);
-  height: 4rem;
   box-shadow: inset rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 1px 3px 0px 1px inset;
+  border-radius: 0.4rem;
+  text-align: right;
+  
 }
-.display .display_previous,
-.displau_previous .display_current{
-  min-height: 1.3rem;
+.display_previous{
+  min-height: 1.4rem;
+  text-align: right;
   word-wrap: break-word;
+  
+}
+.display_current{
+  min-height: 2rem;
+  word-break:break-all;
+  font-weight: 500;
+  font-size: 1.5rem;
+
+  overflow-wrap: break-word;
 }
 .buttons{
   margin-top: 1rem;
@@ -61,12 +73,12 @@ body{
   cursor: pointer;
 
 }
-.buttons button:hover{
+/* .buttons button:hover{
   border-bottom: 2px;
   border-right: 1px;
   border-left: 1px;
 
-}
+} */
 .buttons #equal-btn{
   width: 100%;
   grid-column: span 2;
@@ -76,11 +88,11 @@ body{
   border-right: 3px solid #249a69;
   border-bottom: 5px solid #249a69;
 }
-.buttons #equal-btn:hover{
+/* .buttons #equal-btn:hover{
   border-bottom: 2px;
   border-right: 1px;
   border-left: 1px;
-}
+} */
 .buttons .number{
   background: var(--white);
   color: var(--bg-color);
