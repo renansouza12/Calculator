@@ -6,3 +6,10 @@
   box-sizing: border-box;
   font-family: 'DM Sans', sans-serif;
 }
+:root{
+  --bg-color :#16161a;
+  --button:#7f5af0;
+  --white :#fffffe;
+  --secondary:#72757e;
+  --tertiary:#2cb67d;
+}
