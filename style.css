@@ -30,8 +30,6 @@ body{
   border-left: 3px solid var(--border);
   border-right: 3px solid var(--border);
   border-bottom: 8px solid var(--border);
-
-
 }
 .display{
   background: var(--white);
@@ -50,16 +48,27 @@ body{
   gap: 0.5rem;
 }
 .buttons button{
-  padding: 1rem ;
+  outline: none;
+  height: 5rem;
+  width: 5rem;
   font-size: 1.3rem;
   border-radius: 0.4rem;
   background: var(--button);
   color: var(--white);
-  border-left: 3px solid #6f4ed2;
-  border-right: 3px solid #6f4ed2;
+  border-left: 2px solid #6f4ed2;
+  border-right: 2px solid #6f4ed2;
   border-bottom: 5px solid #6f4ed2;
+  cursor: pointer;
+
+}
+.buttons button:hover{
+  border-bottom: 2px;
+  border-right: 1px;
+  border-left: 1px;
+
 }
 .buttons #equal-btn{
+  width: 100%;
   grid-column: span 2;
   background: var(--tertiary);
   border-radius: 0.4rem;
@@ -67,7 +76,11 @@ body{
   border-right: 3px solid #249a69;
   border-bottom: 5px solid #249a69;
 }
-
+.buttons #equal-btn:hover{
+  border-bottom: 2px;
+  border-right: 1px;
+  border-left: 1px;
+}
 .buttons .number{
   background: var(--white);
   color: var(--bg-color);
