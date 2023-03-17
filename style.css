@@ -10,6 +10,70 @@
   --bg-color :#16161a;
   --button:#7f5af0;
   --white :#fffffe;
+  --border:#4f5156;
+  --btn-border: #bababa;
   --secondary:#72757e;
   --tertiary:#2cb67d;
+}
+body{
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background: var(--bg-color); 
+}
+.calculator{
+  background: var(--secondary);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  border-left: 3px solid var(--border);
+  border-right: 3px solid var(--border);
+  border-bottom: 8px solid var(--border);
+
+
+}
+.display{
+  background: var(--white);
+  height: 4rem;
+  box-shadow: inset rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 1px 3px 0px 1px inset;
+}
+.display .display_previous,
+.displau_previous .display_current{
+  min-height: 1.3rem;
+  word-wrap: break-word;
+}
+.buttons{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 0.5rem;
+}
+.buttons button{
+  padding: 1rem ;
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  background: var(--button);
+  color: var(--white);
+  border-left: 3px solid #6f4ed2;
+  border-right: 3px solid #6f4ed2;
+  border-bottom: 5px solid #6f4ed2;
+}
+.buttons #equal-btn{
+  grid-column: span 2;
+  background: var(--tertiary);
+  border-radius: 0.4rem;
+  border-left: 3px solid #249a69;
+  border-right: 3px solid #249a69;
+  border-bottom: 5px solid #249a69;
+}
+
+.buttons .number{
+  background: var(--white);
+  color: var(--bg-color);
+  border-radius: 0.4rem;
+  border-left: 3px solid var(--btn-border);
+  border-right: 3px solid var(--btn-border);
+  border-bottom: 5px solid var(--btn-border);
+
 }
