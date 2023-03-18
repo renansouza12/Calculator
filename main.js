@@ -1,19 +1,14 @@
-const buttons = document.querySelectorAll('button');
-const display_current = document.querySelector('.display_current');
+const displayCurrent = document.querySelector('.display_current');
+const buttons =document.querySelectorAll('button');
 
 buttons.forEach((btn)=>{
     btn.addEventListener('click',()=>{
-        display_current.innerHTML += btn.innerHTML;
-
-        btn.style.borderBottom =  '2px';
-        btn.style.borderRight =  '1px';
-        btn.style.borderLeft =  '1px';
-        setInterval(()=>{
-            btn.style.borderBottom =  '';
-            btn.style.borderRight =  '';
-            btn.style.borderLeft =  '';
-        },200)
-
+       switch(btn.innerHTML){
+        case 'CE':
+            displayCurrent.innerHTML = '';
+            break;
+        default:
+            displayCurrent.innerHTML += btn.innerHTML;
+       }
     })
-    
 })
