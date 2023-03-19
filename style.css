@@ -56,15 +56,16 @@ body{
 }
 .buttons{
   margin-top: 1rem;
+  
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 0.5rem;
 }
 .buttons button{
   outline: none;
+  font-size: 1.3rem;
   height: 5rem;
   width: 5rem;
-  font-size: 1.3rem;
   border-radius: 0.4rem;
   background: var(--button);
   color: var(--white);
@@ -78,6 +79,7 @@ body{
   width: 100%;
   grid-column: span 2;
   background: var(--tertiary);
+  color: var(--white);
   border-radius: 0.4rem;
   border-left: 3px solid #249a69;
   border-right: 3px solid #249a69;
@@ -87,6 +89,7 @@ body{
 .buttons .number{
   background: var(--white);
   color: var(--bg-color);
+ 
   border-radius: 0.4rem;
   border-left: 3px solid var(--btn-border);
   border-right: 3px solid var(--btn-border);
