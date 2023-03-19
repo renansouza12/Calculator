@@ -14,14 +14,27 @@ buttons.forEach((btn)=>{
             break;
         case 'C':
             displayCurrent.innerHTML = displayCurrent.innerHTML.slice(0, -1);
-            break;
+            break
         case '=':
-            displayPrevious.innerHTML = displayCurrent.innerHTML;
-            displayCurrent.innerHTML = eval(displayCurrent.innerHTML) ?? '';
+            validNumber();
             break;
-        default:
-            displayCurrent.innerHTML += btn.innerHTML;;
+        default:    
+        displayCurrent.innerHTML.length > 15 ? alert("can't enter more 15 digits")  : displayCurrent.innerHTML += btn.innerHTML;
+
        }
-       console.log(displayCurrent.innerHTML);
+       
     })
 })
+
+
+
+function validNumber(){
+    try{
+        displayPrevious.innerHTML = displayCurrent.innerHTML;
+        displayCurrent.innerHTML = eval(displayCurrent.innerHTML) ?? '0';
+    }catch{
+        alert('Enter a valid number');
+        displayPrevious.innerHTML = '';
+    }
+  
+}
