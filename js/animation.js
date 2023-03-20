@@ -1,5 +1,4 @@
-
- //calculator animation
+//calculator animation
 gsap.from('.calculator',{duration:1.3, x:-500, ease:'back'})
 //animation display
 gsap.from('.display',{ opacity:0,y:300})
