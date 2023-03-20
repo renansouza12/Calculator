@@ -95,3 +95,22 @@ body{
   border-bottom: 5px solid var(--btn-border);
 
 }
+
+@media (min-width:320px) {
+    .calculator{
+      width: 330px;
+    }
+    .buttons button{
+      height: 4rem;
+      width: 4rem;
+    }
+}
+@media (min-width:480px) {
+ .calculator{
+  width: 390px;
+ } 
+ .buttons button{
+  height: 5rem;
+  width: 5rem;
+}
+}
